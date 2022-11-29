@@ -1,0 +1,319 @@
+﻿Copyright....................................................................  4
+Table of Contents............................................................  5
+Preface...................................................................... 13
+	Section 1. New for the Second Edition.................................... 13
+	Section 2. Conventions Used in This Book................................. 14
+	Section 3. Using Code Examples........................................... 14
+	Section 4. O’Reilly Safari............................................... 15
+	Section 5. How to Contact Us............................................. 15
+	Section 6. Acknowledgments............................................... 16
+		In Memoriam: John D. Hunter (1968–2012).............................. 16
+		Acknowledgments for the Second Edition (2017)........................ 16
+		Acknowledgments for the First Edition (2012)......................... 17
+Chapter 1. Preliminaries..................................................... 19
+	1.1 What Is This Book About?............................................. 19
+		What Kinds of Data?.................................................. 19
+	1.2 Why Python for Data Analysis?........................................ 20
+		Python as Glue....................................................... 20
+		Solving the “Two-Language” Problem................................... 21
+		Why Not Python?...................................................... 21
+	1.3 Essential Python Libraries........................................... 22
+		NumPy................................................................ 22
+		pandas............................................................... 22
+		matplotlib........................................................... 23
+		IPython and Jupyter.................................................. 24
+		SciPy................................................................ 24
+		scikit-learn......................................................... 25
+		statsmodels.......................................................... 26
+	1.4 Installation and Setup............................................... 26
+		Windows.............................................................. 27
+		Apple (OS X, macOS).................................................. 27
+		GNU/Linux............................................................ 27
+		Installing or Updating Python Packages............................... 28
+		Python 2 and Python 3................................................ 29
+		Integrated Development Environments (IDEs) and Text
+      Editors.... 29
+	1.5 Community and Conferences............................................ 30
+	1.6 Navigating This Book................................................. 30
+		Code Examples........................................................ 31
+		Data for Examples.................................................... 31
+		Import Conventions................................................... 32
+		Jargon............................................................... 32
+Chapter 2. Python Language Basics, IPython, and Jupyter Notebooks............ 33
+	2.1 The Python Interpreter............................................... 34
+	2.2 IPython Basics....................................................... 35
+		Running the IPython Shell............................................ 35
+		Running the Jupyter Notebook......................................... 36
+		Tab Completion....................................................... 39
+		Introspection........................................................ 41
+		The %run Command..................................................... 43
+		Executing Code from the Clipboard.................................... 44
+		Terminal Keyboard Shortcuts.......................................... 45
+		About Magic Commands................................................. 46
+		Matplotlib Integration............................................... 47
+	2.3 Python Language Basics............................................... 48
+		Language Semantics................................................... 48
+		Scalar Types......................................................... 56
+		Control Flow......................................................... 64
+Chapter 3. Built-in Data Structures, Functions, and Files.................... 69
+	3.1 Data Structures and Sequences........................................ 69
+		Tuple................................................................ 69
+		List................................................................. 72
+		Built-in Sequence Functions.......................................... 77
+		dict................................................................. 79
+		set.................................................................. 83
+		List, Set, and Dict Comprehensions................................... 85
+	3.2 Functions............................................................ 87
+		Namespaces, Scope, and Local Functions............................... 88
+		Returning Multiple Values............................................ 89
+		Functions Are Objects................................................ 90
+		Anonymous (Lambda) Functions......................................... 91
+		Currying: Partial Argument Application............................... 92
+		Generators........................................................... 93
+		Errors and Exception Handling........................................ 95
+	3.3 Files and the Operating System....................................... 98
+		Bytes and Unicode with Files.........................................101
+	3.4 Conclusion...........................................................102
+Chapter 4. NumPy Basics: Arrays and Vectorized
+  Computation.................103
+	4.1 The NumPy ndarray: A Multidimensional Array Object...................105
+		Creating ndarrays....................................................106
+		Data Types for ndarrays..............................................108
+		Arithmetic with NumPy Arrays.........................................111
+		Basic Indexing and Slicing...........................................112
+		Boolean Indexing.....................................................117
+		Fancy Indexing.......................................................120
+		Transposing Arrays and Swapping Axes.................................121
+	4.2 Universal Functions: Fast Element-Wise Array Functions...............123
+	4.3 Array-Oriented Programming with Arrays...............................126
+		Expressing Conditional Logic as Array Operations.....................127
+		Mathematical and Statistical Methods.................................129
+		Methods for Boolean Arrays...........................................131
+		Sorting..............................................................131
+		Unique and Other Set Logic...........................................132
+	4.4 File Input and Output with Arrays....................................133
+	4.5 Linear Algebra.......................................................134
+	4.6 Pseudorandom Number Generation.......................................136
+	4.7 Example: Random Walks................................................137
+		Simulating Many Random Walks at Once.................................139
+	4.8 Conclusion...........................................................140
+Chapter 5. Getting Started with pandas.......................................141
+	5.1 Introduction to pandas Data Structures...............................142
+		Series...............................................................142
+		DataFrame............................................................146
+		Index Objects........................................................152
+	5.2 Essential Functionality..............................................154
+		Reindexing...........................................................154
+		Dropping Entries from an Axis........................................156
+		Indexing, Selection, and Filtering...................................158
+		Integer Indexes......................................................163
+		Arithmetic and Data Alignment........................................164
+		Function Application and Mapping.....................................169
+		Sorting and Ranking..................................................171
+		Axis Indexes with Duplicate Labels...................................175
+	5.3 Summarizing and Computing Descriptive Statistics.....................176
+		Correlation and Covariance...........................................178
+		Unique Values, Value Counts, and Membership..........................180
+	5.4 Conclusion...........................................................183
+Chapter 6. Data Loading, Storage, and File
+  Formats.........................185
+	6.1 Reading and Writing Data in Text Format..............................185
+		Reading Text Files in Pieces.........................................191
+		Writing Data to Text Format..........................................193
+		Working with Delimited Formats.......................................194
+		JSON Data............................................................196
+		XML and HTML: Web Scraping...........................................198
+	6.2 Binary Data Formats..................................................201
+		Using HDF5 Format....................................................202
+		Reading Microsoft Excel Files........................................204
+	6.3 Interacting with Web APIs............................................205
+	6.4 Interacting with Databases...........................................206
+	6.5 Conclusion...........................................................208
+Chapter 7. Data Cleaning and Preparation.....................................209
+	7.1 Handling Missing Data................................................209
+		Filtering Out Missing Data...........................................211
+		Filling In Missing Data..............................................213
+	7.2 Data Transformation..................................................215
+		Removing Duplicates..................................................215
+		Transforming Data Using a Function or Mapping........................216
+		Replacing Values.....................................................218
+		Renaming Axis Indexes................................................219
+		Discretization and Binning...........................................221
+		Detecting and Filtering Outliers.....................................223
+		Permutation and Random Sampling......................................224
+		Computing Indicator/Dummy Variables..................................226
+	7.3 String Manipulation..................................................229
+		String Object Methods................................................229
+		Regular Expressions..................................................231
+		Vectorized String Functions in pandas................................234
+	7.4 Conclusion...........................................................237
+Chapter 8. Data Wrangling: Join, Combine, and Reshape........................239
+	8.1 Hierarchical Indexing................................................239
+		Reordering and Sorting Levels........................................242
+		Summary Statistics by Level..........................................243
+		Indexing with a DataFrame’s columns..................................243
+	8.2 Combining and Merging Datasets.......................................245
+		Database-Style DataFrame Joins.......................................245
+		Merging on Index.....................................................250
+		Concatenating Along an Axis..........................................254
+		Combining Data with Overlap..........................................259
+	8.3 Reshaping and Pivoting...............................................260
+		Reshaping with Hierarchical Indexing.................................261
+		Pivoting “Long” to “Wide” Format.....................................264
+		Pivoting “Wide” to “Long” Format.....................................267
+	8.4 Conclusion...........................................................269
+Chapter 9. Plotting and Visualization........................................271
+	9.1 A Brief matplotlib API Primer........................................271
+		Figures and Subplots.................................................273
+		Colors, Markers, and Line Styles.....................................277
+		Ticks, Labels, and Legends...........................................279
+		Annotations and Drawing on a Subplot.................................283
+		Saving Plots to File.................................................285
+		matplotlib Configuration.............................................286
+	9.2 Plotting with pandas and seaborn.....................................286
+		Line Plots...........................................................287
+		Bar Plots............................................................290
+		Histograms and Density Plots.........................................295
+		Scatter or Point Plots...............................................298
+		Facet Grids and Categorical Data.....................................301
+	9.3 Other Python Visualization Tools.....................................303
+	9.4 Conclusion...........................................................304
+Chapter 10. Data Aggregation and Group
+  Operations..........................305
+	10.1 GroupBy Mechanics...................................................306
+		Iterating Over Groups................................................309
+		Selecting a Column or Subset of Columns..............................311
+		Grouping with Dicts and Series.......................................312
+		Grouping with Functions..............................................313
+		Grouping by Index Levels.............................................313
+	10.2 Data Aggregation....................................................314
+		Column-Wise and Multiple Function Application........................316
+		Returning Aggregated Data Without Row Indexes........................319
+	10.3 Apply: General split-apply-combine..................................320
+		Suppressing the Group Keys...........................................322
+		Quantile and Bucket Analysis.........................................323
+		Example: Filling Missing Values with Group-Specific
+      Values.....324
+		Example: Random Sampling and Permutation.............................326
+		Example: Group Weighted Average and Correlation......................328
+		Example: Group-Wise Linear Regression................................330
+	10.4 Pivot Tables and Cross-Tabulation...................................331
+		Cross-Tabulations: Crosstab..........................................333
+	10.5 Conclusion..........................................................334
+Chapter 11. Time Series......................................................335
+	11.1 Date and Time Data Types and Tools..................................336
+		Converting Between String and Datetime...............................337
+	11.2 Time Series Basics..................................................340
+		Indexing, Selection, Subsetting......................................341
+		Time Series with Duplicate Indices...................................344
+	11.3 Date Ranges, Frequencies, and Shifting..............................345
+		Generating Date Ranges...............................................346
+		Frequencies and Date Offsets.........................................348
+		Shifting (Leading and Lagging) Data..................................350
+	11.4 Time Zone Handling..................................................353
+		Time Zone Localization and Conversion................................353
+		Operations with Time Zone−Aware Timestamp Objects....................356
+		Operations Between Different Time Zones..............................357
+	11.5 Periods and Period Arithmetic.......................................357
+		Period Frequency Conversion..........................................358
+		Quarterly Period Frequencies.........................................360
+		Converting Timestamps to Periods (and Back)..........................362
+		Creating a PeriodIndex from Arrays...................................363
+	11.6 Resampling and Frequency Conversion.................................366
+		Downsampling.........................................................367
+		Upsampling and Interpolation.........................................370
+		Resampling with Periods..............................................371
+	11.7 Moving Window Functions.............................................372
+		Exponentially Weighted Functions.....................................376
+		Binary Moving Window Functions.......................................377
+		User-Defined Moving Window Functions.................................379
+	11.8 Conclusion..........................................................380
+Chapter 12. Advanced pandas..................................................381
+	12.1 Categorical Data....................................................381
+		Background and Motivation............................................381
+		Categorical Type in pandas...........................................383
+		Computations with Categoricals.......................................385
+		Categorical Methods..................................................388
+	12.2 Advanced GroupBy Use................................................391
+		Group Transforms and “Unwrapped” GroupBys............................391
+		Grouped Time Resampling..............................................395
+	12.3 Techniques for Method Chaining......................................396
+		The pipe Method......................................................398
+	12.4 Conclusion..........................................................399
+Chapter 13. Introduction to Modeling Libraries in
+  Python...................401
+	13.1 Interfacing Between pandas and Model Code...........................401
+	13.2 Creating Model Descriptions with Patsy..............................404
+		Data Transformations in Patsy Formulas...............................407
+		Categorical Data and Patsy...........................................408
+	13.3 Introduction to statsmodels.........................................411
+		Estimating Linear Models.............................................411
+		Estimating Time Series Processes.....................................414
+	13.4 Introduction to scikit-learn........................................415
+	13.5 Continuing Your Education...........................................419
+Chapter 14. Data Analysis Examples...........................................421
+	14.1 1.USA.gov Data from Bitly...........................................421
+		Counting Time Zones in Pure Python...................................422
+		Counting Time Zones with pandas......................................424
+	14.2 MovieLens 1M Dataset................................................431
+		Measuring Rating Disagreement........................................436
+	14.3 US Baby Names 1880–2010.............................................437
+		Analyzing Naming Trends..............................................443
+	14.4 USDA Food Database..................................................452
+	14.5 2012 Federal Election Commission Database...........................458
+		Donation Statistics by Occupation and Employer.......................460
+		Bucketing Donation Amounts...........................................463
+		Donation Statistics by State.........................................465
+	14.6 Conclusion..........................................................466
+Appendix A. Advanced NumPy...................................................467
+	A.1 ndarray Object Internals.............................................467
+		NumPy dtype Hierarchy................................................468
+	A.2 Advanced Array Manipulation..........................................469
+		Reshaping Arrays.....................................................470
+		C Versus Fortran Order...............................................472
+		Concatenating and Splitting Arrays...................................472
+		Repeating Elements: tile and repeat..................................475
+		Fancy Indexing Equivalents: take and put.............................477
+	A.3 Broadcasting.........................................................478
+		Broadcasting Over Other Axes.........................................480
+		Setting Array Values by Broadcasting.................................483
+	A.4 Advanced ufunc Usage.................................................484
+		ufunc Instance Methods...............................................484
+		Writing New ufuncs in Python.........................................486
+	A.5 Structured and Record Arrays.........................................487
+		Nested dtypes and Multidimensional Fields............................487
+		Why Use Structured Arrays?...........................................488
+	A.6 More About Sorting...................................................489
+		Indirect Sorts: argsort and lexsort..................................490
+		Alternative Sort Algorithms..........................................492
+		Partially Sorting Arrays.............................................492
+		numpy.searchsorted: Finding Elements in a Sorted Array...............493
+	A.7 Writing Fast NumPy Functions with Numba..............................494
+		Creating Custom numpy.ufunc Objects with Numba.......................496
+	A.8 Advanced Array Input and Output......................................496
+		Memory-Mapped Files..................................................496
+		HDF5 and Other Array Storage Options.................................498
+	A.9 Performance Tips.....................................................498
+		The Importance of Contiguous Memory..................................498
+Appendix B. More on the IPython System.......................................501
+	B.1 Using the Command History............................................501
+		Searching and Reusing the Command History............................501
+		Input and Output Variables...........................................502
+	B.2 Interacting with the Operating System................................503
+		Shell Commands and Aliases...........................................504
+		Directory Bookmark System............................................505
+	B.3 Software Development Tools...........................................505
+		Interactive Debugger.................................................506
+		Timing Code: %time and %timeit.......................................510
+		Basic Profiling: %prun and %run -p...................................512
+		Profiling a Function Line by Line....................................514
+	B.4 Tips for Productive Code Development Using IPython...................516
+		Reloading Module Dependencies........................................516
+		Code Design Tips.....................................................517
+	B.5 Advanced IPython Features............................................518
+		Making Your Own Classes IPython-Friendly.............................518
+		Profiles and Configuration...........................................519
+	B.6 Conclusion...........................................................521
+Index........................................................................523
+About the Author.............................................................541
+Colophon.....................................................................541
