@@ -3,16 +3,18 @@
 [![hackmd-github-sync-badge](https://hackmd.io/GzREUXa0Tm6o3sbQLharmw/badge)](https://hackmd.io/GzREUXa0Tm6o3sbQLharmw)
 
 ## Book Chapter
-
+* lorem
 
 ## Books
 * McKinney, W. (2022). Python for Data Analysis (3 ed.). O'Reilly. 
 * Pal, A., and Prakash, P. (2017). Practical Time Series Analysis. Packt. 
 
+----
+## pd.date_range
 ```python==
 dates = pd.date_range(start="2017-04-01", end="2017-04-30")
 ```
-----
+
 ## modules
 * [Time series - date functionality](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#timeseries-offset-aliases)
 * [pandas.to_datetime](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html)
